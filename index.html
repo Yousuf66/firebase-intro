@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    </head>
+    <body>
+
+        <h1>Cafe list</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" id="" placeholder="name">
+                <input type="text" name="city" id="" placeholder="city/country">
+                <button type="submit">Add Cafe</button>
+                
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBlC8yORnpUEqpnI8Fuhcvdn4eIjzxicJI",
+    authDomain: "mindstorm-firestore.firebaseapp.com",
+    databaseURL: "https://mindstorm-firestore.firebaseio.com",
+    projectId: "mindstorm-firestore",
+    storageBucket: "mindstorm-firestore.appspot.com",
+    messagingSenderId: "277126953776"
+  };
+  firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({timestampsInSnapshots: true});
+</script>
+        <script src="app.js"></script>
+    </body>
+</html>
