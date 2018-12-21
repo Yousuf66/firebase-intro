@@ -1,1 +1,2 @@
-# firebase-firestore-playlist
+# firebase-firestore
+firebase CRUD operations
